@@ -2,4 +2,14 @@
 body{
     font-family: sans-serif, arial;
     color: #4A4F64;
+    background-color: #4A4F64;
+    margin: 0px;
+}
+h1,h2,h3,h4,p{
+    margin: 0px;
+}
+.content {
+    background-color: #EFEFEF;
+    width: 700px;
+    margin: auto;
 }
