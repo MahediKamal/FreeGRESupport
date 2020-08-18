@@ -15,6 +15,17 @@ calculatorModule.config([
                 '$scope',
                 
                 function($scope){
+                    $(".calculator-cross").click(function(){
+                        console.log("This will hide the calculator.");
+                    });
+                    $(".calculator-button").click(function(){
+                        var text = $(this).text();
+                        console.log(text);
+                    });
+                    $(".calculator-bottom").click(function(){
+                        console.log("This will transfer result to text-box.");
+                    });
+
                 }],
             });
     }
