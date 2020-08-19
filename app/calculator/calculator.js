@@ -19,8 +19,9 @@ calculatorModule.config([
                         console.log("This will hide the calculator.");
                     });
                     $(".calculator-button").click(function(){
-                        var text = $(this).text();
-                        console.log(text);
+                        var input = $(this).text();
+                        var output = claculate(input);
+                        $(".calculator-disply").text(output);
                     });
                     $(".calculator-bottom").click(function(){
                         console.log("This will transfer result to text-box.");
