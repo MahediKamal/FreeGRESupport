@@ -8,11 +8,18 @@ body{
 h1,h2,h3,h4,p{
     margin: 0px;
 }
-.content {
+textarea{
+    resize: none;
+    margin: 0px;
+    padding: 0px;
+}
+.content{
     background-color: #EFEFEF;
-    width: 700px;
+    width: 800px;
     margin: auto;
 }
+
+/*.........................Calculator.........................*/
 .calculator{
     height:270px;
     width: 200px;
@@ -69,4 +76,31 @@ h1,h2,h3,h4,p{
     width: 20%;
     text-align: center;
     font-weight: 900 ;
+}
+
+/*.........................AWA.........................*/
+.awa-table{
+    width: 100%;
+    height: 98vh;
+    padding: 1px;
+}
+.awa-left-block{
+    height: 100%;
+    width: 40%;
+}
+.awa-question{
+    height: 50%;
+    width: 100%;
+}
+.awa-description{
+    height: 50%;
+    width: 100%;
+}
+.awa-right-block{
+    height: 100%;
+    width: 60%;
+}
+.awa-writing-place{
+    height: 100%;
+    width: 100%;
 }
