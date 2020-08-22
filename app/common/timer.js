@@ -22,6 +22,7 @@ timerModule.directive('timer',
                 $(".timer-reset").click(function(){
                     timerReset();
                 });
+                showTime();
             }],
         };
     }
