@@ -1,12 +1,13 @@
-
 body{
     font-family: sans-serif, arial;
     color: #4A4F64;
     background-color: #4A4F64;
     margin: 0px;
 }
-h1,h2,h3,h4,p{
+h1,h2,h3,h4,p,i,td,tr,table,ul,li{
     margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 textarea{
     resize: none;
@@ -15,12 +16,12 @@ textarea{
 }
 
 /*.........................Common.........................*/
-.content{
+.window{
     background-color: #EFEFEF;
-    width: 800px;
+    width: 25cm;
     margin: auto;
 }
-.simple-button{
+.borderless-button{
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -29,50 +30,102 @@ textarea{
     user-select: none; /* Chrome, Edge, Opera and Firefox */
 
     text-align: center;
+    color: #0F0F0F;
 }
-.simple-button:hover{
-    background-color: #DFDFDF;
+.borderless-button:hover{
+    color: #3F3F3F;
 }
-.simple-button:active {
-    background-color: #CFCFCF;
+.borderless-button:active{
+    color: #6F6F6F;
+}
+.horizontally-aligned-listitem{
+    float: left;
+    display: block;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-/*.........................Header-&-Footer.........................*/
+/*.........................Header.........................*/
 .header{
-    height: 3vh;
+    height: 8vh;
+    background-color: #0F0F0F;
+    color: #BEBEBE;
 }
-.footer{
-    height: 3vh;
+.header-content{
+    height: 100%;
+    width: 25%;
+}
+.header-title{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 250%;
+}
+.header-subtitle{
+    font-weight: bold;
+    font-size: 100%;
 }
 
 /*.........................Timer.........................*/
 .timer{
     width: 100%;
     height: 4vh;
+    background-color: #C89696;
 }
 .timer-content{
-    width: 25%;
+    width: 28%;
+    height: 100%;
+    float: right;
+    list-style: none inside none;
 }
 .timer-edit{
-    border: 1px solid black;
-    width: 22px;
-    margin: auto;
+    font-size: 130%;
 }
 .timer-reset{
-    border: 1px solid black;
-    width: 22px;
-    margin: auto;
+    font-size: 130%;
 }
 .timer-play-pause{
-    border: 1px solid black;
-    width: 22px;
-    margin: auto;
+    font-size: 130%;
 }
 .timer-display{
-    height: 100%;
-    width: 50%;
     padding-right: 5%;
+    padding-left: 5%;
     text-align: right;
+    font-size: 130%;
+    font-weight: bold;
+}
+.timer-hide{
+    height: 100%;
+}
+.timer-hide-icon{
+    font-size: 130%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.timer-hide-text{
+    font-size: 130%;
+}
+
+/*.........................Footer.........................*/
+.footer{
+    height: 3vh;
+    background-color: #0F0F0F;
+    font-size: 80%;
+    color: #BEBEBE;
+}
+.footer-text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+/*.........................Content.........................*/
+.content{
+    height: 85vh;
 }
 
 /*.........................Calculator.........................*/
@@ -135,7 +188,7 @@ textarea{
 
 /*.........................AWA.........................*/
 .awa{
-    height: 90vh;
+
 }
 .awa-table{
     width: 100%;

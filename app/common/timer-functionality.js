@@ -30,14 +30,14 @@ function timerReset() {
 function pauseTimer() {
     if (increaseSecondId) clearInterval(increaseSecondId);
     isTimePlaying = false;
-    $(".timer-play-pause").text(String.fromCharCode(9655));
+    $(".timer-play-pause").text("play_circle_outline");
 }
 
 function playTimer() {
     showTime();
     increaseSecondId = setInterval(increaseSecond, 1000);
     isTimePlaying = true;
-    $(".timer-play-pause").text(String.fromCharCode(8545));
+    $(".timer-play-pause").text("pause_circle_outline");
 }
 
 function increaseSecond() {
