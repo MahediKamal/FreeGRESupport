@@ -4,7 +4,7 @@ body{
     background-color: #4A4F64;
     margin: 0px;
 }
-h1,h2,h3,h4,p,i,td,tr,table,ul,li{
+h1,h2,h3,h4,p,i,ul,ol,li,table,tr,td{
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -12,7 +12,8 @@ h1,h2,h3,h4,p,i,td,tr,table,ul,li{
 textarea{
     resize: none;
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 /*.........................Common.........................*/
@@ -126,6 +127,7 @@ textarea{
 /*.........................Content.........................*/
 .content{
     height: 85vh;
+    box-sizing: border-box;
 }
 
 /*.........................Calculator.........................*/
@@ -188,23 +190,29 @@ textarea{
 
 /*.........................AWA.........................*/
 .awa{
-
+    padding: 3px;
 }
 .awa-table{
     width: 100%;
     height: 100%;
-    padding: 1px;
 }
 .awa-left-block{
     height: 100%;
     width: 40%;
 }
-.awa-question{
+.awa_left-sub-block{
+    height: 100%;
+    width: 100%;
+}
+.awa_question-description{
     height: 50%;
+}
+.awa-question{
+    height: 100%;
     width: 100%;
 }
 .awa-description{
-    height: 50%;
+    height: 100%;
     width: 100%;
 }
 .awa-right-block{
