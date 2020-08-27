@@ -15,6 +15,7 @@ homeModule.config([
                 '$scope',
                 
                 function($scope){
+                    // $(".timer-content").hide();
                 }],
             });
     }

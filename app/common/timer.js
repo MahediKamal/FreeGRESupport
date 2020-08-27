@@ -22,6 +22,9 @@ timerModule.directive('timer',
                 $(".timer-reset").click(function(){
                     timerReset();
                 });
+                $(".timer-hide").click(function(){
+                    timerHide();
+                });
                 showTime();
             }],
         };

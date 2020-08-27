@@ -7,6 +7,7 @@ var freeGRESupport = angular.module('freeGRESupport', [
     'calculatorModule',
     'awaModule',
     'headerModule',
+    'subHeaderModule',
     'timerModule',
     'footerModule',
 ]);
