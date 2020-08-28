@@ -15,7 +15,7 @@ awaModule.config([
                 '$scope',
                 
                 function($scope){
-                    showData();
+                    loadAWAQuestion('issue');
                 }],
             });
     }

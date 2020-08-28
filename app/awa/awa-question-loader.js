@@ -1,30 +1,32 @@
-function showData(){
-    var num=randomNumber(1, 150);
-    var File = num.toString();
+function loadAWAQuestion(type){
+    var dir;
+    if(type == 'issue'){
+        dir = "res/strings/ets-issue-pool/";
+    }else{
+        dir = "res/strings/ets-argument-pool/";
+    }
+
+    var questionNo = randomNumber(1, 150);
     
-    ShowQuestion(File);
-    ShowDescription(File);
+    ShowQuestion(dir, questionNo.toString());
+    ShowDescription(dir, questionNo.toString());
 }
 
 function randomNumber(min, max) {  
     return Math.floor(Math.random() * (max - min)) + min; 
 }
 
-function ShowQuestion(File){
-    var FileName=File.concat("q.txt");
-    var dir="res/strings/ets-issue-pool/";
-    FileName=dir.concat(FileName);
+function ShowQuestion(dir, questionNo){
+    var fileName = questionNo.concat("q.txt");
 
-    jQuery.get(FileName, function(data) {
+    jQuery.get(dir.concat(fileName), function(data) {
         $(".awa-question").text(data);
     });
 }
-function ShowDescription(File){
-    var FileName=File.concat("d.txt");
-    var dir="res/strings/ets-issue-pool/";
-    FileName=dir.concat(FileName);
-
-    jQuery.get(FileName, function(data) {
+function ShowDescription(dir, questionNo){
+    var fileName = questionNo.concat("q.txt");
+    
+    jQuery.get(dir.concat(fileName), function(data) {
         $(".awa-description").text(data);
     });
 }

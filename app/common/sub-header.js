@@ -2,7 +2,7 @@
 
 var subHeaderModule = angular.module('subHeaderModule', []);
 
-subHeaderModule.directive('subheader', 
+subHeaderModule.directive('subHeader', 
 
     function(){
         return{
@@ -11,9 +11,9 @@ subHeaderModule.directive('subheader',
             templateUrl: 'app/common/sub-header.html',
             controller: [
             '$scope',
-            
+
             function($scope){
-                
+                $scope.isShowTimer = true;
             }],
         };
     }
