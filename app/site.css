@@ -12,6 +12,9 @@ h1,h2,h3,h4,p,i,ul,ol,li,table,tr,td{
 a{
     color: #BEBEBE;
 }
+ul{
+    list-style-type: none;
+}
 textarea{
     resize: none;
     margin: 0px;
@@ -82,45 +85,6 @@ textarea{
     box-sizing: border-box;
 }
 
-/*.........................Timer.........................*/
-.timer{
-    height: 100%;
-}
-.timer-content{
-    width: 32%;
-    height: 100%;
-    float: right;
-    list-style: none inside none;
-}
-.timer-edit{
-    font-size: 130%;
-}
-.timer-reset{
-    font-size: 130%;
-}
-.timer-play-pause{
-    font-size: 130%;
-}
-.timer-display{
-    padding-right: 5%;
-    padding-left: 5%;
-    text-align: right;
-    font-size: 130%;
-    font-weight: bold;
-}
-.timer-hide{
-    height: 100%;
-}
-.timer-hide-icon{
-    font-size: 130%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.timer-hide-text{
-    font-size: 130%;
-}
-
 /*.........................Content.........................*/
 .content{
     height: 85vh;
@@ -150,6 +114,44 @@ textarea{
     width: 50%;
     text-align: right;
     padding-right: 5px;
+}
+
+/*.........................Timer.........................*/
+.timer{
+    height: 100%;
+}
+.timer-content{
+    width: 32%;
+    height: 100%;
+    float: right;
+}
+.timer-edit{
+    font-size: 130%;
+}
+.timer-reset{
+    font-size: 130%;
+}
+.timer-play-pause{
+    font-size: 130%;
+}
+.timer-display{
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: right;
+    font-size: 130%;
+    font-weight: bold;
+}
+.timer-hide{
+    height: 100%;
+}
+.timer-hide-icon{
+    font-size: 130%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.timer-hide-text{
+    font-size: 130%;
 }
 
 /*.........................Calculator.........................*/
@@ -214,7 +216,7 @@ textarea{
 .awa{
     padding: 3px;
 }
-.awa-table{
+.awa-content{
     width: 100%;
     height: 100%;
 }

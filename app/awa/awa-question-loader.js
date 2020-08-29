@@ -1,19 +1,22 @@
 function loadAWAQuestion(type){
     var dir;
-    if(type == 'issue'){
+    var count;
+    if(type && type == "issue"){
         dir = "res/strings/ets-issue-pool/";
+        count=150;
     }else{
         dir = "res/strings/ets-argument-pool/";
+        count=176;
     }
 
-    var questionNo = randomNumber(1, 150);
-    
+    var questionNo = randomNumber(count);
+
     ShowQuestion(dir, questionNo.toString());
     ShowDescription(dir, questionNo.toString());
 }
 
-function randomNumber(min, max) {  
-    return Math.floor(Math.random() * (max - min)) + min; 
+function randomNumber(count) {  
+    return Math.floor(Math.random() * (count - 1)) + 1; 
 }
 
 function ShowQuestion(dir, questionNo){
@@ -24,7 +27,7 @@ function ShowQuestion(dir, questionNo){
     });
 }
 function ShowDescription(dir, questionNo){
-    var fileName = questionNo.concat("q.txt");
+    var fileName = questionNo.concat("d.txt");
     
     jQuery.get(dir.concat(fileName), function(data) {
         $(".awa-description").text(data);

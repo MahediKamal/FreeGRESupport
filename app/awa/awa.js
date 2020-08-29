@@ -6,16 +6,17 @@ var awaModule = angular.module('awaModule', [
 
 awaModule.config([
     '$routeProvider',
-    
+
     function ($routeProvider) {
         $routeProvider
             .when('/awa', {
                 templateUrl: 'app/awa/awa.html',
                 controller: [
                 '$scope',
-                
-                function($scope){
-                    loadAWAQuestion('issue');
+                '$routeParams',
+
+                function($scope, $routeParams){
+                    loadAWAQuestion($routeParams.type);
                 }],
             });
     }
