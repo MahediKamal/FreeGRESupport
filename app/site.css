@@ -10,7 +10,7 @@ h1,h2,h3,h4,p,i,ul,ol,li,table,tr,td{
     border: 0px;
 }
 a{
-    color: #BEBEBE;
+    color: #70A0D0;
 }
 ul{
     list-style-type: none;
@@ -38,12 +38,25 @@ textarea{
 
     text-align: center;
     color: #0F0F0F;
-}
-.borderless-button:hover{
+}.borderless-button:hover{
     color: #3F3F3F;
-}
-.borderless-button:active{
+}.borderless-button:active{
     color: #6F6F6F;
+}
+.simple-button{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer and Edge */
+    user-select: none; /* Chrome, Edge, Opera and Firefox */
+
+    text-align: center;
+    /* background-color: #0F0F0F; */
+}.simple-button:hover{
+    background-color: #DFDFDF;
+}.simple-button:active{
+    background-color: #BFBFBF;
 }
 .horizontally-aligned-listitem{
     float: left;
@@ -152,6 +165,36 @@ textarea{
 }
 .timer-hide-text{
     font-size: 130%;
+}
+
+/*.........................HOME.........................*/
+.home-title{
+    font-size: 150%;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+.home-text{
+    font-size: 100%;
+    padding-left: 1%;
+    padding-top: 3%;
+}
+.home-helpful-links{
+    padding-left: 5%;
+}
+
+/*.........................ERROR.........................*/
+.error-title{
+    font-size: 200%;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+.error-text{
+    font-size: 100%;
+    padding-left: 1%;
+    padding-top: 3%;
+}
+.error-helpful-links{
+    padding-left: 5%;
 }
 
 /*.........................Calculator.........................*/

@@ -23,7 +23,7 @@ calculatorModule.config([
                         var output = claculate(input);
                         $(".calculator-disply").text(output);
                     });
-                    $(".calculator-bottom").click(function(){
+                    $(".calculator-transfer-display").click(function(){
                         console.log("This will transfer result to text-box.");
                     });
 
