@@ -1,3 +1,6 @@
+var MAX_TIME = 99*60*60;
+var MIN_TIME = 1;
+
 var fullTime = 30*60;
 var currentRemainingTime = fullTime;
 var isTimePlaying = false;
@@ -33,10 +36,17 @@ function timerPlayPause() {
 }
 
 function timerEdit() {
-    var time = window.prompt("Time (min)", Math.floor(fullTime/60));
+    var timeInMin = window.prompt("Time (min)", Math.floor(fullTime/60));
     
-    if(time) {
-        fullTime = time*60;
+    if (timeInMin && !isNaN(timeInMin)) {
+        var time = timeInMin*60;
+        if (time < MIN_TIME) {
+            time = MIN_TIME;
+        } else if (time > MAX_TIME) {
+            time = MAX_TIME;
+        }
+
+        fullTime = time;
         timerReset();
     }
 }
@@ -64,12 +74,9 @@ function increaseSecond() {
     if(currentRemainingTime > 0) {
         currentRemainingTime --;
         showTime();
-        
-    } 
-    
-    if (currentRemainingTime == 0) {
+    } else {
         pauseTimer();
-        //alert("Time is up!");
+        alert("Time is up!");
     }
 }
 
