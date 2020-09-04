@@ -13,6 +13,10 @@ subHeaderModule.directive('subHeader',
             '$scope',
 
             function($scope){
+                $scope.subHeaderTitle = {};
+                subHeaderTitle=$scope.subHeaderTitle;
+                subHeaderTitle.value="";
+
                 $scope.isShowTimer = true;
             }],
         };

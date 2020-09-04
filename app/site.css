@@ -66,10 +66,24 @@ textarea{
     align-items: center;
     height: 100%;
 }
+.content-title{
+    font-size: 150%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.content-text{
+    font-size: 100%;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.content-url-list{
+    padding-left: 30px;
+}
 
 /*.........................Header.........................*/
 .header{
-    height: 6.5vh;
+    height: 6vh;
     background-color: #0F0F0F;
     color: #BEBEBE;
     box-sizing: border-box;
@@ -81,7 +95,7 @@ textarea{
 .header-title{
     font-style: italic;
     font-weight: bold;
-    font-size: 250%;
+    font-size: 220%;
     padding-left: 5px;
 }
 .header-subtitle{
@@ -93,8 +107,25 @@ textarea{
 /*.........................SubHeader.........................*/
 .sub-header{
     width: 100%;
-    height: 3.5vh;
+    height: 4vh;
     background-color: #C89696;
+    box-sizing: border-box;
+}
+.sub-header-title{
+    width: 67%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 130%;
+    font-weight: bold;
+}
+.sub-header-timer{
+    width: 33%;
+    height: 100%;
+    float: left;
     box-sizing: border-box;
 }
 
@@ -131,12 +162,11 @@ textarea{
 
 /*.........................Timer.........................*/
 .timer{
+    width: 100%;
     height: 100%;
 }
 .timer-content{
-    width: 32%;
     height: 100%;
-    float: right;
 }
 .timer-edit{
     font-size: 130%;
@@ -148,8 +178,8 @@ textarea{
     font-size: 130%;
 }
 .timer-display{
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 15px;
+    padding-left: 15px;
     text-align: right;
     font-size: 130%;
     font-weight: bold;
@@ -168,33 +198,12 @@ textarea{
 }
 
 /*.........................HOME.........................*/
-.home-title{
-    font-size: 150%;
-    padding-left: 1%;
-    padding-top: 1%;
-}
-.home-text{
-    font-size: 100%;
-    padding-left: 1%;
-    padding-top: 3%;
-}
-.home-helpful-links{
-    padding-left: 5%;
+.home{
 }
 
+
 /*.........................ERROR.........................*/
-.error-title{
-    font-size: 200%;
-    padding-left: 1%;
-    padding-top: 1%;
-}
-.error-text{
-    font-size: 100%;
-    padding-left: 1%;
-    padding-top: 3%;
-}
-.error-helpful-links{
-    padding-left: 5%;
+.error{
 }
 
 /*.........................Calculator.........................*/

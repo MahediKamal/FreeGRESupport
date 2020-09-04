@@ -4,9 +4,11 @@ function loadAWAQuestion(type){
     if(type && type == "issue"){
         dir = "res/strings/ets-issue-pool/";
         count=150;
+        subHeaderTitle.value="Issue";
     }else{
         dir = "res/strings/ets-argument-pool/";
         count=176;
+        subHeaderTitle.value="Argument";
     }
 
     var questionNo = randomNumber(count);

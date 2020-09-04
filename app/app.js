@@ -1,5 +1,7 @@
 'use strict';
 
+var subHeaderTitle={};
+
 var freeGRESupport = angular.module('freeGRESupport', [
     'ngRoute',
     'homeModule',
