@@ -26,7 +26,8 @@ calculatorModule.config([
                     $(".calculator-transfer-display").click(function(){
                         console.log("This will transfer result to text-box.");
                     });
-
+                    subHeaderTitle.value = "";
+                    subHeaderTimer.isShow = false;
                 }],
             });
     }

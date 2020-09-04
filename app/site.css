@@ -10,7 +10,7 @@ h1,h2,h3,h4,p,i,ul,ol,li,table,tr,td{
     border: 0px;
 }
 a{
-    color: #70A0D0;
+    color: #4090E0;
 }
 ul{
     list-style-type: none;
@@ -52,7 +52,6 @@ textarea{
     user-select: none; /* Chrome, Edge, Opera and Firefox */
 
     text-align: center;
-    /* background-color: #0F0F0F; */
 }.simple-button:hover{
     background-color: #DFDFDF;
 }.simple-button:active{
@@ -85,12 +84,21 @@ textarea{
 .header{
     height: 6vh;
     background-color: #0F0F0F;
-    color: #BEBEBE;
     box-sizing: border-box;
+}
+.header-title-and-subtitle{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+.header-menu{
+    float: left;
+    width: 75%;
+    height: 100%;
 }
 .header-content{
     height: 100%;
-    width: 25%;
+    color: #BEBEBE;
 }
 .header-title{
     font-style: italic;

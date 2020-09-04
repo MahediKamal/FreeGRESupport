@@ -6,7 +6,7 @@ timerModule.directive('timer',
 
     function(){
         return{
-            scope: {isShowTimer: '='},
+            scope: {},
             restrict: 'E',
             templateUrl: 'app/common/timer.html',
             controller: [

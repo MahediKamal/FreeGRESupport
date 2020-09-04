@@ -14,10 +14,12 @@ subHeaderModule.directive('subHeader',
 
             function($scope){
                 $scope.subHeaderTitle = {};
-                subHeaderTitle=$scope.subHeaderTitle;
-                subHeaderTitle.value="";
+                subHeaderTitle = $scope.subHeaderTitle;
+                subHeaderTitle.value = "";
 
-                $scope.isShowTimer = true;
+                $scope.subHeaderTimer = {};
+                subHeaderTimer = $scope.subHeaderTimer;
+                subHeaderTimer.isShow = false;
             }],
         };
     }

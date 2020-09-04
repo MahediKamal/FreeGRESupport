@@ -1,6 +1,11 @@
 'use strict';
 
-var subHeaderTitle={};
+var subHeaderTitle = {};
+var subHeaderTimer = {};
+
+window.onbeforeunload = function() {
+    return "Data you entered on this page might get lost.";
+};
 
 var freeGRESupport = angular.module('freeGRESupport', [
     'ngRoute',

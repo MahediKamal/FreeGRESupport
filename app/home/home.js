@@ -15,6 +15,8 @@ homeModule.config([
                 '$scope',
                 
                 function($scope){
+                    subHeaderTitle.value = "";
+                    subHeaderTimer.isShow = false;
                 }],
             });
     }
